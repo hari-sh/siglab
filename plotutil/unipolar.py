@@ -17,7 +17,7 @@ def plot_binary(bits1, bits2):
     ax1.set_title('Transmitted Bits')
     ax1.set_xlabel('Time')
     ax1.set_ylabel('Amplitude')
-    ax1.set_xticks(np.arange(0, len(bits1)+1, step=1))
+    # ax1.set_xticks(np.arange(0, len(bits1)+1, step=1))
     ax1.set_yticks([0, 1], labels=['0', '1'])
 
     ax2.step(time2, signal2, where='post', color='green', linewidth=2)
@@ -25,7 +25,7 @@ def plot_binary(bits1, bits2):
     ax2.set_title('Received Bits')
     ax2.set_xlabel('Time')
     ax2.set_ylabel('Amplitude')
-    ax2.set_xticks(np.arange(0, len(bits2)+1, step=1))
+    # ax2.set_xticks(np.arange(0, len(bits2)+1, step=1))
     ax2.set_yticks([0, 1], labels=['0', '1'])
 
     plt.tight_layout()
